@@ -1,0 +1,432 @@
+<html>
+	<head>
+		<title>Sum Html Textbox Values using jQuery/JavaScript</title>
+		<style>
+			body {
+				font-family: sans-serif;
+			}
+			#summation {
+				font-size: 18px;
+				font-weight: bold;
+				color:#174C68;
+			}
+			.txt {
+				background-color: #FEFFB0;
+				font-weight: bold;
+				text-align: right;
+			}
+		</style>
+		<script src="jquery.min.js"></script>
+		  <link rel="stylesheet" href="bootstrap.min.css">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>  -->
+	</head>
+	<body>
+<table width="100%" border="1" style="border-collapse:collapse;background-color:#E8DCFF">
+	   <tr>
+			 <td>Populated PCB Class 3 Wired</td>
+			 <td>
+			 <select class="form-control" name="marksqsm1" id="marksqsm1" required >
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="4">4</option>
+			 </select>
+			 </td>
+			
+			 <td>
+			  <select class="form-control txt" name="markstd1" id="markstd1" required >
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="4">4</option>
+			 </select>
+			 </td>
+			</tr>
+			<tr>
+			 <td>Populated PCB class 3 Inspection Clearance</td>
+			 <td>
+			 <select class="form-control" name="marksqsm2" id="marksqsm2" required >
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="3">3</option>
+			 </select></td>
+			<td>
+			 <select class="form-control txt" name="markstd2" id="markstd2" required >
+			   <option value="">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="3">3</option>
+			 </select></td>
+			</tr>
+			 <tr>
+			 <td>Mech Dimensional QC</td>
+			 <td>
+			 <select class="form-control" name="marksqsm3" id="marksqsm3" required >
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="3">3</option>
+			   <option value="6">6</option>
+			 </select></td>
+			 <td>
+			 <select class="form-control txt" name="markstd3" id="markstd3" required >
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="3">3</option>
+			   <option value="6">6</option>
+			 </select></td>
+			</tr>
+			<tr>
+			 <td>Burn IN</td>
+			 <td>
+			 <select class="form-control" name="marksqsm4" id="marksqsm4" required >
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="10">10</option>
+			 </select></td>
+			 <td> <input type="text" class="form-control" name="comment4" id="comment4" required /></td>
+			 <td> <input type="text" class="form-control" name="randqa4" id="randqa4"  required /></td>
+			 <td>
+			 <select class="form-control txt" name="markstd4" id="markstd4" required>
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="10">10</option>
+			 </select></td>
+			</tr>
+			 <tr>
+			 <td>Integration QC</td>
+			 <td>
+			 <select class="form-control" name="marksqsm5" id="marksqsm5" required >
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="4">4</option>
+			   <option value="8">8</option>
+			 </select></td>
+			 <td> <input type="text" class="form-control" name="comment5" id="comment5" required /></td>
+			 <td> <input type="text" class="form-control" name="randqa5" id="randqa5"  required /></td>
+			 <td>
+			 <select class="form-control txt" name="markstd5" id="markstd5" required>
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="4">4</option>
+			   <option value="8">8</option>
+			 </select></td>
+			</tr>
+			 <tr>
+			 <td>Initial Functional Test Cleared</td>
+			 <td>
+			 <select class="form-control" name="marksqsm6" id="marksqsm6" required>
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="5">5</option>
+			   <option value="10">10</option>
+			   <option value="15">15</option>
+			 </select></td>
+			 <td> <input type="text" class="form-control" name="comment6" id="comment6" required /></td>
+			 <td> <input type="text" class="form-control" name="randqa6" id="randqa6"  required /></td>
+			 <td>
+			 <select class="form-control txt" name="markstd6" id="markstd6" required>
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="5">5</option>
+			   <option value="10">10</option>
+			   <option value="15">15</option>
+			 </select></td>
+			</tr>
+			 <tr>
+			 <td>ESS</td>
+			 <td>
+			 <select class="form-control" name="marksqsm7" id="marksqsm7" required >
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="6">6</option>
+			   <option value="12">12</option>
+			 </select></td>
+			 <td> <input type="text" class="form-control" name="comment7" id="comment7" required /></td>
+			 <td> <input type="text" class="form-control" name="randqa7" id="randqa7"  required /></td>
+			 <td>
+			 <select class="form-control txt" name="markstd7" id="markstd7" required>
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="6">6</option>
+			   <option value="12">12</option>
+			 </select></td>
+			</tr>
+			<tr>
+			 <td>ENTEST Cleared</td>
+			 <td>
+			 <select class="form-control" name="marksqsm8" id="marksqsm8" required>
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="7">7</option>
+			   <option value="13">13</option>
+			 </select></td>
+			 <td> <input type="text" class="form-control" name="comment8" id="comment8" required /></td>
+			 <td> <input type="text" class="form-control" name="randqa8" id="randqa8"  required /></td>
+			 <td>
+			 <select class="form-control txt" name="markstd8" id="markstd8" required >
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="7">7</option>
+			   <option value="13">13</option>
+			 </select></td>
+			</tr>
+			<tr>
+			 <td>Final Functional Test</td>
+			<td>
+			 <select class="form-control" name="marksqsm9" id="marksqsm9" required >
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="6">6</option>
+			   <option value="12">12</option>
+			   <option value="12">17</option>
+			 </select></td>
+			 <td> <input type="text" class="form-control" name="comment9" id="comment9" required  /></td>
+			 <td> <input type="text" class="form-control" name="randqa9" id="randqa9"  required /></td>
+			 <td>
+			 <select class="form-control txt" name="markstd9" id="markstd9" required >
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="6">6</option>
+			   <option value="12">12</option>
+			   <option value="12">17</option>
+			 </select></td>
+			</tr>
+			  <tr>
+			 <td>Unit Never Opened After Integration</td>
+			 <td>
+			 <select class="form-control" name="marksqsm10" id="marksqsm10" required >
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="3">3</option>
+			   <option value="6">6</option>
+			   <option value="10">10</option>
+			 </select></td>
+			 <td> <input type="text" class="form-control" name="comment10" id="comment10" required /></td>
+			 <td> <input type="text" class="form-control" name="randqa10" id="randqa10"  required /></td>
+			 <td>
+			 <select class="form-control txt" name="markstd10" id="markstd10" required >
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="3">3</option>
+			   <option value="6">6</option>
+			   <option value="10">10</option>
+			 </select></td>
+			</tr>
+			 <tr>
+			 <td>BURN IN Problem</td>
+			 <td>
+			 <select class="form-control" name="marksqsm11" id="marksqsm11" required >
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="-4">-4</option>
+			 </select></td>
+			 <td> <input type="text" class="form-control" name="comment11" id="comment11" required /></td>
+			 <td> <input type="text" class="form-control" name="randqa11" id="randqa11"  required /></td>
+			 <td>
+			 <select class="form-control txt" name="markstd11" id="markstd11" required >
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="-4">-4</option>
+			 </select></td>
+			</tr>
+			<tr>
+			 <td>ESS Problem</td>
+			 <td>
+			 <select class="form-control" name="marksqsm12" id="marksqsm12" required >
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="-3">-3</option>
+			   <option value="-6">-6</option>
+			 </select></td>
+			 <td> <input type="text" class="form-control" name="comment12" id="comment12" required /></td>
+			 <td> <input type="text" class="form-control" name="randqa12" id="randqa12"  required /></td>
+			 <td>
+			 <select class="form-control txt" name="markstd12" id="markstd12" required >
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="-3">-3</option>
+			   <option value="-6">-6</option>
+			 </select></td>
+			</tr>
+			  <tr>
+			 <td>FAB cases</td>
+			<td>
+			 <select class="form-control"  name="marksqsm13" id="marksqsm13" required>
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="-4">-4</option>
+			   <option value="-8">-8</option>
+			   <option value="-12">-12</option>
+			   <option value="-16">-16</option>
+			   <option value="-20">-20</option>
+			   <option value="-24">-24</option>
+			   <option value="-28">-28</option>
+			   <option value="-32">-32</option>
+			   <option value="-36">-36</option>
+			   <option value="-40">-40</option>
+			 </select></td>
+			 <td> <input type="text" class="form-control" name="comment13" id="comment13" required /></td>
+			 <td> <input type="text" class="form-control" name="randqa13" id="randqa13"  required /></td>
+			 <td>
+			 <select class="form-control txt" name="markstd13" id="markstd13" required >
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="-4">-4</option>
+			   <option value="-8">-8</option>
+			   <option value="-12">-12</option>
+			   <option value="-16">-16</option>
+			   <option value="-20">-20</option>
+			   <option value="-24">-24</option>
+			   <option value="-28">-28</option>
+			   <option value="-32">-32</option>
+			   <option value="-36">-36</option>
+			   <option value="-40">-40</option>
+			 </select></td>
+			</tr>
+			  <tr>
+			 <td>Performance Deviations Certified by TD</td>
+			 <td>
+			 <select class="form-control" name="marksqsm14" id="marksqsm14" required >
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="-4">-4</option>
+			   <option value="-8">-8</option>
+			   <option value="-12">-12</option>
+			   <option value="-16">-16</option>
+			   <option value="-20">-20</option>
+			   <option value="-24">-24</option>
+			   <option value="-28">-28</option>
+			   <option value="-32">-32</option>
+			   <option value="-36">-36</option>
+			   <option value="-40">-40</option>
+			 </select></td>
+			 <td> <input type="text" class="form-control" name="comment14" id="comment14" required /></td>
+			 <td> <input type="text" class="form-control" name="randqa14" id="randqa14"  required /></td>
+			 <td>
+			 <select class="form-control txt" name="markstd14" id="markstd14" required >
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="-4">-4</option>
+			   <option value="-8">-8</option>
+			   <option value="-12">-12</option>
+			   <option value="-16">-16</option>
+			   <option value="-20">-20</option>
+			   <option value="-24">-24</option>
+			   <option value="-28">-28</option>
+			   <option value="-32">-32</option>
+			   <option value="-36">-36</option>
+			   <option value="-40">-40</option>
+			 </select></td>
+			</tr>
+			<tr>
+			 <td>Waiver Cases</td>
+			 <td>
+			 <select class="form-control" name="marksqsm15" id="marksqsm15" required >
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="-2">-2</option>
+			   <option value="-4">-4</option>
+			   <option value="-6">-6</option>
+			   <option value="-8">-8</option>
+			   <option value="-12">-12</option>
+			   <option value="-14">-14</option>
+			   <option value="-16">-16</option>
+			   <option value="-18">-18</option>
+			   <option value="-20">-20</option>
+			 </select></td>
+			 <td> <input type="text" class="form-control" name="comment15" id="comment15" required /></td>
+			 <td> <input type="text" class="form-control" name="randqa15" id="randqa15"  required /></td>
+			 <td>
+			 <select class="form-control txt" name="markstd15" id="markstd15" required >
+			   <option value="0">Please Select</option>
+			   <option value="0">0</option>
+			   <option value="-2">-2</option>
+			   <option value="-4">-4</option>
+			   <option value="-6">-6</option>
+			   <option value="-8">-8</option>
+			   <option value="-12">-12</option>
+			   <option value="-14">-14</option>
+			   <option value="-16">-16</option>
+			   <option value="-18">-18</option>
+			   <option value="-20">-20</option>
+			 </select></td>
+			</tr>
+			
+			
+			
+			
+	<tr id="summation">
+		<td>&nbsp;</td>
+		<td align="right">Sum :</td>
+		<td align="center"><span id="sum">0</span></td>
+	</tr>
+</table>
+
+
+<script>
+	$(document).ready(function(){
+
+		//iterate through each textboxes and add keyup
+		//handler to trigger sum event
+		$(".txt").each(function() {
+
+			$(this).change(function(){
+				calculateSum();
+			});
+		});
+
+	});
+
+	function calculateSum() {
+
+		var sum = 0;
+		//iterate through each textboxes and add the values
+		$(".txt").each(function() {
+
+			//add only if the value is number
+			if(!isNaN(this.value) && this.value.length!=0) {
+				sum += parseFloat(this.value);
+			}
+
+		});
+		//.toFixed() method will roundoff the final sum to 2 decimal places
+		$("#sum").html(sum.toFixed(2));
+	}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+<script>
+$("#calculate").click(function () {
+    var primaryincome = $("#primaryincome").val();
+    var otherincome = $("#otherincome").val();
+    var totalincome = parseInt(primaryincome) + parseInt(otherincome);
+   // alert(totalincome);
+    $("#totalamountremaining").val(totalincome);
+})
+</script>
+
+
+<input type="number" id="primaryincome" class="form-control" placeholder="0">
+<input type="number" id="otherincome" class="form-control" placeholder="0">
+<input type="number" id="otherincome" class="form-control" placeholder="0">
+<input type="number" id="totalamountremaining" class="form-control" placeholder="0" readonly>
+<button id="calculate" type="button">calculate</button>
+
+
+-->

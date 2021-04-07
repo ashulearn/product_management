@@ -1,0 +1,114 @@
+create table bqr_status(id int not null auto_increment,pdr_marks_qsm varchar(100),pdr_comment varchar(100),pdr_randqa_rep varchar(100),pdr_marks_td varchar(100),
+layout_marks_qsm varchar(100),layout_comment varchar(100),layout_randqa_rep varchar(100),layout_marks_td varchar(100),pcb_marks_qsm varchar(100),pcb_comment varchar(100),
+pcb_randqa_rep varchar(100),pcb_marks_td varchar(100),mechdesign_marks_qsm varchar(100),mechdesign_comment varchar(100),mechdesign_randqa_rep varchar(100),mechdesign_marks_td varchar(100),
+group_a_marks_qsm varchar(100),group_a_comment varchar(100),group_a_randqa_rep varchar(100),group_a_marks_td varchar(100),group_b_marks_qsm varchar(100),group_b_comment varchar(100),
+group_b_randqa_rep varchar(100),group_b_marks_td varchar(100),bbt_marks_qsm varchar(100),bbt_comment varchar(100),bbt_randqa_rep varchar(100),bbt_marks_td varchar(100),
+packing_marks_qsm varchar(100),packing_comment varchar(100),packing_randqa_rep varchar(100),packing_marks_td varchar(100),qap_marks_qsm varchar(100),qap_comment varchar(100),
+qap_randqa_rep varchar(100),qap_marks_td varchar(100),bom_marks_qsm varchar(100),bom_comment varchar(100),bom_randqa_rep varchar(100),bom_marks_td varchar(100),
+integration_approved_marks_qsm varchar(100),integration_approved_comment varchar(100),integration_approved_randqa_rep varchar(100),integration_approved_marks_td varchar(100),
+qtatsoft_approved_marks_qsm varchar(100),qtatsoft_approved_comment varchar(100),qtatsoft_approved_randqa_rep varchar(100),qtatsoft_approved_marks_td varchar(100),
+rawmat_marks_qsm varchar(100),rawmat_comment varchar(100),rawmat_randqa_rep varchar(100),rawmat_marks_td varchar(100),
+emi_emc_marks_qsm varchar(100),emi_emc_comment varchar(100),emi_emc_randqa_rep varchar(100),emi_emc_marks_td varchar(100),
+majorqt_marks_qsm varchar(100),majorqt_comment varchar(100),majorqt_randqa_rep varchar(100),majorqt_marks_td varchar(100),
+cdr_marks_qsm varchar(100),cdr_comment varchar(100),cdr_randqa_rep varchar(100),cdr_marks_td varchar(100),
+reliability_marks_qsm varchar(100),reliability_comment varchar(100),reliability_randqa_rep varchar(100),reliability_marks_td varchar(100),
+fmeca_marks_qsm varchar(100),fmeca_comment varchar(100),fmeca_randqa_rep varchar(100),fmeca_marks_td varchar(100),
+sdrc_marks_qsm varchar(100),sdrc_comment varchar(100),sdrc_randqa_rep varchar(100),sdrc_marks_td varchar(100),
+pdr_minutes_marks_qsm varchar(100),pdr_minutes_comment varchar(100),pdr_minutes_randqa_rep varchar(100),pdr_minutes_marks_td varchar(100),
+packing_recomm_marks_qsm varchar(100),packing_recomm_comment varchar(100),packing_recomm_randqa_rep varchar(100),packing_recomm_marks_td varchar(100),
+pdr_units_marks_qsm varchar(100),pdr_units_comment varchar(100),pdr_units_randqa_rep varchar(100),pdr_units_marks_td varchar(100)
+,qap_delayed_marks_qsm varchar(100),qap_delayed_comment varchar(100),qap_delayed_randqa_rep varchar(100),qap_delayed_marks_td varchar(100),
+integration_delayed_marks_qsm varchar(100),integration_delayed_comment varchar(100),integration_delayed_randqa_rep varchar(100),integration_delayed_marks_td varchar(100),
+qtatdoc_delayed_marks_qsm varchar(100),qtatdoc_delayed_comment varchar(100),qtatdoc_delayed_randqa_rep varchar(100),qtatdoc_delayed_marks_td varchar(100),inserted_date varchar(100),
+inserted_time varchar(100),primar key(id)
+);
+
+
+
+create table remarks_bqr_status(id int not null auto_increment,product_id varchar(100),pdr_obtained_marks varchar(100),pdr_comment varchar(100),
+layout_obtained_marksvarchar(100),layout_remarks varchar(100),
+pcb_obtained_marks varchar(100),pcb_remarks varchar(100),
+mechdesign_obtained_marks varchar(100),mechdesign_remarks varchar(100),
+group_a_obtained_marks varchar(100),group_a_remarks varchar(100)
+,group_b_obtained_marks varchar(100),group_b_remarks varchar(100),
+bbt_obtained_marks varchar(100),bbt_remarks varchar(100),
+packing_obtained_marks varchar(100),packing_remarks varchar(100),
+qap_obtained_marks varchar(100),qap_remarks varchar(100),
+bom_obtained_marks varchar(100),bom_remarks varchar(100),
+integration_approved_obtained_marks varchar(100),integration_approved_remarks varchar(100),
+qtatsoft_approved_obtained_marks varchar(100),qtatsoft_approved_remarks varchar(100),
+rawmat_obtained_marksvarchar(100),rawmat_remarks varchar(100),
+emi_emc_obtained_marks varchar(100),emi_emc_remarks varchar(100),
+majorqt_obtained_marks varchar(100),majorqt_remarks varchar(100),
+cdr_obtained_marks varchar(100),cdr_remarks varchar(100),
+reliability_obtained_marks varchar(100),reliability_remarks varchar(100),
+fmeca_obtained_marks varchar(100),fmeca_remarks varchar(100),
+sdrc_obtained_marks varchar(100),sdrc_remarks varchar(100),
+pdr_minutes_obtained_marks varchar(100),pdr_minutes_remarks varchar(100),
+packing_recomm_obtained_marks varchar(100),packing_recomm_remarks varchar(100),
+pdr_units_obtained_marks varchar(100),pdr_units_remarks varchar(100),
+,qap_delayed_obtained_marks varchar(100),qap_delayed_remarks varchar(100),
+integration_delayed_obtained_marks varchar(100),integration_delayed_remarks varchar(100),
+qtatdoc_delayed_obtained_marks varchar(100),qtatdoc_delayed_remarks varchar(100),inserted_date varchar(100),
+inserted_time varchar(100),primar key(id)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+create table uqr_status(id int not null auto_increment,pcbwired_marks_qsm varchar(100),pcbwired_comment varchar(100),pcbwired_name varchar(100),pcbwired_marks_td varchar(100),
+pcb_inspection_marks_qsm varchar(100),pcb_inspection_comment varchar(100),pcb_inspection_name varchar(100),pcb_inspection_marks_td varchar(100),
+mechdimen_marks_qsm varchar(100),mechdimen_comment varchar(100),mechdimen_name varchar(100),mechdimen_marks_td varchar(100),
+burnin_marks_qsm varchar(100),burnin_comment varchar(100),burnin_name varchar(100),burnin_marks_td varchar(100),
+integration_qc_marks_qsm varchar(100),integration_qc_comment varchar(100),integration_qc_name varchar(100),integration_qc_marks_td varchar(100),
+initial_func_marks_qsm varchar(100),initial_func_comment varchar(100),initial_func_name varchar(100),initial_func_marks_td varchar(100),
+ess_marks_qsm varchar(100),ess_comment varchar(100),ess_name varchar(100),ess_marks_td varchar(100),
+entest_marks_qsm varchar(100),entest_comment varchar(100),entest_name varchar(100),entest_marks_td varchar(100),
+final_func_marks_qsm varchar(100),final_func_comment varchar(100),final_func_name varchar(100),final_func_marks_td varchar(100),
+unit_never_opened_marks_qsm varchar(100),unit_never_opened_comment varchar(100),unit_never_opened_name varchar(100),unit_never_opened_marks_td varchar(100),
+burnin_prob_marks_qsm varchar(100),burnin_prob_comment varchar(100),burnin_prob_name varchar(100),burnin_prob_marks_td varchar(100),
+ess_prob_marks_qsm varchar(100),ess_prob_comment varchar(100),ess_prob_name varchar(100),ess_prob_marks_td varchar(100),
+fab_marks_qsm varchar(100),fab_comment varchar(100),fab_name varchar(100),fab_marks_td varchar(100),
+perform_dev_cert_td_marks_qsm varchar(100),perform_dev_cert_td_comment varchar(100),perform_dev_cert_td_name varchar(100),perform_dev_cert_td_marks_td varchar(100),
+waiver_marks_qsm varchar(100),waiver_comment varchar(100),waiver_name varchar(100),waiver_marks_td varchar(100),total varchar(100),inserted_date varchar(100),inserted_time varchar(100),
+primar key(id)
+);
+
+
+
+create table remarks_uqr_status(id int not null auto_increment,product_id varchar(100),pcbwired_obtained_marks varchar(100),pcbwired_remarks varchar(100),
+pcb_inspection_obtained_marks varchar(100),pcb_inspection_remarks varchar(100),
+mechdimen_obtained_marks varchar(100),mechdimen_remarks varchar(100),
+burnin_obtained_marks  varchar(100),burnin_remarks varchar(100),
+integration_qc_obtained_marks  varchar(100),integration_qc_remarks varchar(100),
+initial_func_obtained_marks  varchar(100),initial_func_remarks varchar(100),
+ess_obtained_marks  varchar(100),ess_remarks varchar(100),
+entest_obtained_marks  varchar(100),entest_remarks varchar(100),
+final_func_obtained_marks  varchar(100),final_func_remarks varchar(100),
+unit_never_opened_obtained_marks  varchar(100),unit_never_opened_remarks varchar(100),
+burnin_prob_obtained_marks  varchar(100),burnin_prob_remarks varchar(100),
+ess_prob_obtained_marks  varchar(100),ess_prob_remarks varchar(100),
+fab_obtained_marks varchar(100),fab_cremarks varchar(100),
+perform_dev_cert_td_obtained_marks  varchar(100),perform_dev_cert_td_remarks varchar(100),
+waiver_obtained_marks  varchar(100),waiver_remarks varchar(100),inserted_date varchar(100),inserted_time varchar(100),
+primar key(id)
+);

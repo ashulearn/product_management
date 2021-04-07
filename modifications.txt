@@ -1,0 +1,6 @@
+product quality ranking ::
+ 1. project query modification
+ 2. director query add search by either project or directorate
+ 3. runtime addition of table.
+uqr ::
+ 1. help
