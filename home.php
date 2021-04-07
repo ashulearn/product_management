@@ -66,7 +66,7 @@ $uname= $_GET['uname'];
 				<!--<button class="btn btn-success" name="addproduct" id="addproduct" onclick="addproduct();">Add Product for<br/> Quality Ranking</button>
 				-->
               <?php
-				} else if($_GET['position']=='1'){
+				} else{
 				?>
                  <button class="btn btn-success" name="addproduct" id="addproduct" onclick="addproduct();">Add Product for<br/> Quality Ranking</button>
 				<?php }	?>
@@ -78,7 +78,7 @@ $uname= $_GET['uname'];
 				?>
 				 <a href="markingproduct.php?position=<?php echo $_GET['position'];?>&uname=<?php echo $_GET['uname'];?>"> <button class="btn btn-success" name="markingproduct" id="markingproduct">Marking of Product for<br/> Product Quality Ranking</button> </a>
 				  <?php
-				} else if($_GET['position']=='1'){
+				} else{
 				?>
                  <button class="btn btn-success" name="markingproduct" id="markingproduct" onclick="addproduct();">Marking of Product for<br/> Product Quality Ranking</button> 
 				<?php }	?>

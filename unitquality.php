@@ -76,7 +76,7 @@ $user=$roww['username'];
 		   
 	        <div class="col-sm-12 col-md-12 col-lg-12" style="padding:10px;"> 
 		     <div class="col-sm-2 col-md-2 col-lg-2">
-		   <center><a href="markingproduct.php"><button type="button" class="btn btn-success" name="home" id="home">Back To Marking Product</button></a></center>
+		   <center><a href="markingproduct.php?position=<?php echo $_GET['position'];?>&uname=<?php echo $_GET['uname'];?>"><button type="button" class="btn btn-success" name="home" id="home">Back To Marking Product</button></a></center>
 		   </div>
 		     <div class="col-sm-8 col-md-8 col-lg-8"  style="background:#ffff9d;">   
 		    <center> <h3 style="color:#ff0099;font-weight:bold;"> Selected Product Name is: <span styl><?php $que="SELECT * FROM `product_add` WHERE `sno`= '".$id."'"; 

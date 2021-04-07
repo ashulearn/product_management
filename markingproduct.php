@@ -75,7 +75,7 @@ $uname= $_GET['uname'];
 							}
 							else {
 								?>
-								<option value=''>Select Project</option>
+								<option value=''></option>
 								<?php
 								 $prj=mysqli_query($con,"SELECT distinct project FROM `product_add` WHERE `status`='1'");
 								 while($row=mysqli_fetch_array($prj)){
@@ -252,7 +252,7 @@ $uname= $_GET['uname'];
 							
 							else {
 								?>
-								<option value=''>Select Directorate</option>
+								<option value=''></option>
 								<?php
 								 $prj=mysqli_query($con,"SELECT distinct directorate FROM `product_add` WHERE `status`='1'");
 								 while($row=mysqli_fetch_array($prj)){
@@ -354,7 +354,7 @@ $uname= $_GET['uname'];
 							
 							else {
 								?>
-								<option value=''>Select Product Name</option>
+								<option value=''></option>
 								<?php
 								 $prj=mysqli_query($con,"SELECT distinct product_name FROM `product_add` WHERE `status`='1'");
 								 while($row=mysqli_fetch_array($prj)){
@@ -458,7 +458,7 @@ $uname= $_GET['uname'];
 							
 							else {
 								?>
-								<option value=''>Select Product S.L. No</option>
+								<option value=''></option>
 								<?php
 								 $prj=mysqli_query($con,"SELECT distinct product_sno FROM `product_add` WHERE `status`='1'");
 								 while($row=mysqli_fetch_array($prj)){
@@ -564,7 +564,7 @@ $uname= $_GET['uname'];
 							
 							else {
 								?>
-								<option value=''>Select Part No.</option>
+								<option value=''></option>
 								<?php
 								 $prj=mysqli_query($con,"SELECT distinct product_partno FROM `product_add` WHERE `status`='1'");
 								 while($row=mysqli_fetch_array($prj)){
@@ -634,11 +634,11 @@ $uname= $_GET['uname'];
 			 $prod_partno_isset = 0;
 		 }
 
-		 echo $proj_isset;
-		 echo $prod_name_isset;
-		 echo $prod_sno_isset;
-		 echo $prod_dir_isset;
-		 echo $prod_partno_isset;
+		//  echo $proj_isset;
+		//  echo $prod_name_isset;
+		//  echo $prod_sno_isset;
+		//  echo $prod_dir_isset;
+		//  echo $prod_partno_isset;
 		 //base case
 		$var = "SELECT * FROM `product_add` ";
 		if($proj_isset && !$prod_dir_isset)
